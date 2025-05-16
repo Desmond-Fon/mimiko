@@ -1,10 +1,11 @@
 import hero from "../../assets/cat1.png";
 import hero2 from "../../assets/cat2.png";
-import x from "../../assets/x.svg";
+import x from "../../assets/twitter.svg";
 import tg from "../../assets/tg.svg";
 import dex from "../../assets/dex.svg";
 import dax from "../../assets/tools.svg";
 import { Link } from "react-router-dom";
+
 export default function Landing() {
   return (
     <div className="px-6 md:px-16 bg-gray-50 min-h-screen flex flex-col">
