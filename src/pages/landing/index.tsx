@@ -5,8 +5,29 @@ import tg from "../../assets/tg.svg";
 import dex from "../../assets/dex.svg";
 import dax from "../../assets/tools.svg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Landing() {
+
+  const [copied, setCopied] = useState(false);
+
+  // Sample Contract Address (replace with your actual CA)
+  const contractAddress = "0x1234567890abcdef1234567890abcdef12345678";
+
+  // Summarize CA (first 6 and last 4 characters)
+  const summarizedCA = `${contractAddress.slice(
+    0,
+    9
+  )}...${contractAddress.slice(-4)}`;
+
+  // Handle copy to clipboard
+  const handleCopy = () => {
+    navigator.clipboard.writeText(contractAddress).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    });
+  };
+  
   return (
     <div className="px-6 md:px-16 bg-gray-50 min-h-screen flex flex-col">
       {/* Top Nav Area */}
@@ -47,6 +68,7 @@ export default function Landing() {
           </Link>
         </div>
       </div>
+
 
       <div className="w-full bg-gradient-to-br from-amber-50 to-amber-100 relative overflow-hidden">
         {/* Background decoration elements */}
@@ -96,11 +118,44 @@ export default function Landing() {
                   </svg>
                 </button>
 
-                <a href='#learn'>
+                <a href="#learn">
                   <button className="bg-white hover:bg-amber-50 text-amber-700 font-medium py-3 px-8 rounded-full shadow-md border border-amber-200 transform hover:-translate-y-1 transition-all duration-300">
                     Learn More
                   </button>
                 </a>
+              </div>
+
+              {/* New Contract Address Section */}
+              <div className="mt-6 flex items-center gap-3">
+                <span className="text-amber-800 font-mono text-sm sm:text-xl bg-amber-200 px-4 py-2 rounded-md">
+                  {summarizedCA}
+                </span>
+                <button
+                  onClick={handleCopy}
+                  className="bg-amber-600 hover:bg-amber-700 text-white font-medium py-2 px-4 rounded-full shadow-md transform hover:-translate-y-1 transition-all duration-300 flex items-center text-sm"
+                >
+                  {copied ? (
+                    <span>Copied!</span>
+                  ) : (
+                    <>
+                      <span>Copy CA</span>
+                      <svg
+                        className="ml-2 w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                        ></path>
+                      </svg>
+                    </>
+                  )}
+                </button>
               </div>
 
               {/* Paw prints decoration */}
@@ -220,7 +275,10 @@ export default function Landing() {
         </div>
       </section>
 
-      <section id="learn" className="bg-gradient-to-br from-rose-100 to-amber-100 py-16 px-4 md:px-8 lg:px-16 rounded-xl shadow-lg max-w-4xl mx-auto my-12">
+      <section
+        id="learn"
+        className="bg-gradient-to-br from-rose-100 to-amber-100 py-16 px-4 md:px-8 lg:px-16 rounded-xl shadow-lg max-w-4xl mx-auto my-12"
+      >
         <div className="relative">
           {/* Decorative elements */}
           <div className="absolute -top-12 -right-8 w-16 h-16 bg-rose-300 rounded-full opacity-40 hidden md:block"></div>
