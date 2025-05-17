@@ -12,7 +12,7 @@ export default function Landing() {
   const [copied, setCopied] = useState(false);
 
   // Sample Contract Address (replace with your actual CA)
-  const contractAddress = "0x1234567890abcdef1234567890abcdef12345678";
+  const contractAddress = "xxxxxxxxxxxxxxxxxxxxxxxx";
 
   // Summarize CA (first 6 and last 4 characters)
   const summarizedCA = `${contractAddress.slice(
@@ -69,7 +69,6 @@ export default function Landing() {
         </div>
       </div>
 
-
       <div className="w-full bg-gradient-to-br from-amber-50 to-amber-100 relative overflow-hidden">
         {/* Background decoration elements */}
         <div className="absolute top-1/4 left-10 w-24 h-24 bg-amber-200 rounded-full opacity-40 blur-xl"></div>
@@ -79,11 +78,11 @@ export default function Landing() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left side - Text content */}
             <div className="order-2 md:order-1 px-4 py-6 relative z-10">
-              <div className="mb-4 inline-block">
+              {/* <div className="mb-4 inline-block">
                 <span className="bg-amber-700 text-amber-50 px-4 py-1 rounded-full text-sm font-medium tracking-wider">
                   SOLAMEOW
                 </span>
-              </div>
+              </div> */}
 
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-amber-900 leading-tight mb-4">
                 HOUSE CAT
@@ -118,11 +117,11 @@ export default function Landing() {
                   </svg>
                 </button>
 
-                <a href="#learn">
+                {/* <a href="#learn">
                   <button className="bg-white hover:bg-amber-50 text-amber-700 font-medium py-3 px-8 rounded-full shadow-md border border-amber-200 transform hover:-translate-y-1 transition-all duration-300">
                     Learn More
                   </button>
-                </a>
+                </a> */}
               </div>
 
               {/* New Contract Address Section */}
@@ -194,12 +193,12 @@ export default function Landing() {
                 {/* Stats at the bottom */}
                 <div className="mt-4 grid grid-cols-3 gap-2 text-center">
                   <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded p-2">
-                    <div className="text-amber-800 font-bold">10K+</div>
+                    <div className="text-amber-800 font-bold">0</div>
                     <div className="text-amber-600 text-xs">Holders</div>
                   </div>
                   <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded p-2">
-                    <div className="text-amber-800 font-bold">42 SOL</div>
-                    <div className="text-amber-600 text-xs">Floor</div>
+                    <div className="text-amber-800 font-bold">Infinity</div>
+                    <div className="text-amber-600 text-xs">Catnips</div>
                   </div>
                   <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded p-2">
                     <div className="text-amber-800 font-bold">91%</div>
@@ -460,10 +459,10 @@ export default function Landing() {
 
           <div className="relative z-10 py-14 px-6 sm:px-10 md:px-16">
             <div className="text-center mb-10">
-              <h2 className="text-4xl md:text-5xl font-bold text-amber-800 mb-3 tracking-tight">
+              {/* <h2 className="text-4xl md:text-5xl font-bold text-amber-800 mb-3 tracking-tight">
                 Vibe Buttons
-              </h2>
-              <div className="h-1 w-24 bg-amber-400 mx-auto rounded-full mb-6"></div>
+              </h2> */}
+              {/* <div className="h-1 w-24 bg-amber-400 mx-auto rounded-full mb-6"></div> */}
               <p className="text-xl text-amber-700 max-w-xl mx-auto">
                 All the ways to bring more Mimiko into your life
               </p>
