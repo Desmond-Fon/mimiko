@@ -286,7 +286,7 @@ export default function Landing() {
 
           <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold text-amber-800 mb-2 tracking-tight">
-              What is Mimiko?
+              What is Mimoko?
             </h2>
             <div className="h-1 w-24 bg-amber-400 mx-auto rounded-full"></div>
           </div>
@@ -320,7 +320,7 @@ export default function Landing() {
 
               <div className="mt-6 flex justify-center">
                 <button className="bg-amber-500 hover:bg-amber-600 text-white py-2 px-6 rounded-full font-medium transform hover:scale-105 transition-transform duration-300 flex items-center">
-                  <span>Join Mimiko</span>
+                  <span>Join Mimoko</span>
                   <svg
                     className="w-4 h-4 ml-2"
                     fill="none"
@@ -348,7 +348,7 @@ export default function Landing() {
               <div className="bg-rose-100 rounded-lg aspect-square w-full overflow-hidden relative">
                 <img
                   src={hero2}
-                  alt="Mimiko"
+                  alt="Mimoko"
                   className="w-full h-full object-cover"
                 />
 
@@ -464,7 +464,7 @@ export default function Landing() {
               </h2> */}
               {/* <div className="h-1 w-24 bg-amber-400 mx-auto rounded-full mb-6"></div> */}
               <p className="text-xl text-amber-700 max-w-xl mx-auto">
-                All the ways to bring more Mimiko into your life
+                All the ways to bring more Mimoko into your life
               </p>
             </div>
 
