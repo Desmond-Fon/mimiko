@@ -568,7 +568,7 @@ export default function Landing() {
 
             {/* Tagline */}
             <h2 className="text-3xl md:text-4xl font-bold text-amber-800 mb-6 tracking-tight relative inline-block">
-              "Meow is temporary. Mimiso is forever."
+              "Meow is temporary. Mimoko is forever."
               <div className="h-1 w-1/2 bg-amber-400 mx-auto rounded-full mt-2"></div>
             </h2>
 
@@ -585,7 +585,7 @@ export default function Landing() {
           <div className="border-t border-amber-200 pt-6 flex flex-col md:flex-row justify-center items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-amber-700 text-sm">
-                © 2025 Mimiso. All rights reserved.
+                © 2025 Mimoko. All rights reserved.
               </p>
             </div>
           </div>
