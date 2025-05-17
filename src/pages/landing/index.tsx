@@ -54,13 +54,21 @@ export default function Landing() {
         </button>
 
         <div className="flex items-center gap-4">
-          <Link to="" target="_blank" rel="noreferrer">
+          <Link
+            to="https://x.com/HOUSE_CAT_SOL?t=TO-T-4DhKsl0HGCWLswZiQ&s=09"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={x} alt="X" className="w-8 md:w-10" />
           </Link>
           <Link to="https://dexscreener.com/" target="_blank" rel="noreferrer">
             <img src={dex} alt="Dexscreener" className="w-8 md:w-10" />
           </Link>
-          <Link to="https://t.me/" target="_blank" rel="noreferrer">
+          <Link
+            to="https://t.me/housecatportal"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={tg} alt="Telegram" className="w-8 md:w-10" />
           </Link>
           <Link to="/">
