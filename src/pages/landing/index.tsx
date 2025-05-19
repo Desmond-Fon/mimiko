@@ -326,7 +326,12 @@ export default function Landing() {
                 She is the house. The house always wins.
               </p>
 
-              <div className="mt-6 flex justify-center">
+              <Link
+                to={"https://t.me/housecatportal"}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 flex justify-center"
+              >
                 <button className="bg-amber-500 hover:bg-amber-600 text-white py-2 px-6 rounded-full font-medium transform hover:scale-105 transition-transform duration-300 flex items-center">
                   <span>Join Mimoko</span>
                   <svg
@@ -344,7 +349,7 @@ export default function Landing() {
                     ></path>
                   </svg>
                 </button>
-              </div>
+              </Link>
             </div>
 
             {/* Image container with house-shaped frame */}
